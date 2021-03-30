@@ -21,11 +21,12 @@ require (
 	github.com/hashicorp/boundary/sdk v0.0.3
 	github.com/hashicorp/dbassert v0.0.0-20200930125617-6218396928df
 	github.com/hashicorp/errwrap v1.1.0
+	github.com/hashicorp/eventlogger v0.0.0-20200503125528-e0cd2ba137df
 	github.com/hashicorp/go-bexpr v0.1.7
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-hclog v0.15.0
 	github.com/hashicorp/go-kms-wrapping v0.6.1
-	github.com/hashicorp/go-multierror v1.1.0
+	github.com/hashicorp/go-multierror v1.1.1
 	github.com/hashicorp/go-retryablehttp v0.6.8
 	github.com/hashicorp/go-uuid v1.0.2
 	github.com/hashicorp/hcl v1.0.0
@@ -52,6 +53,7 @@ require (
 	github.com/posener/complete v1.2.3
 	github.com/stretchr/testify v1.7.0
 	github.com/zalando/go-keyring v0.1.1
+	go.opentelemetry.io/otel v0.18.0 // indirect
 	go.uber.org/atomic v1.7.0
 	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83
 	golang.org/x/sys v0.0.0-20210220050731-9a76102bfb43

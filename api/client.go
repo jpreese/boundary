@@ -590,7 +590,6 @@ func copyHeaders(in http.Header) http.Header {
 
 	return ret
 }
-
 // NewRequest creates a new raw request object to query the Boundary controller
 // configured for this client. This is an advanced method and generally
 // doesn't need to be called externally.

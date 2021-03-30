@@ -234,8 +234,16 @@ func wrapHandlerWithCommonFuncs(h http.Handler, c *Controller, props HandlerProp
 
 		requestInfo.PublicId, requestInfo.EncryptedToken, requestInfo.TokenFormat = auth.GetTokenFromRequest(c.logger, c.kms, r)
 		ctx = auth.NewVerifierContext(ctx, c.logger, c.IamRepoFn, c.AuthTokenRepoFn, c.ServersRepoFn, c.kms, requestInfo)
+		// ctx = logger.NewObserv(ctx, nil)
+
+		//Note: Should this go here
+		// e, _ := logger.NewEventer()
+		// payload := logger.EventReq(r)
+		// fmt.Println("Hello from handler")
+		// e.WriteEvent("test", payload, ctx)
 
 		// Set the context back on the request
+		r.Context()
 		r = r.WithContext(ctx)
 
 		h.ServeHTTP(w, r)
